@@ -5,39 +5,39 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
-            body {
-              background-color: black;
-            }
-            body > div {
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-            }
-            #loading {
-                flex-direction: column;
-            }
-            progress[value] {
-                appearance: none;
-                background-color: #eee;
-                border-radius: 3px;
-                box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
-                width: 50%;
-                height: 5px
-            }
-        </style>
-    </head>
-  <body>
-    <div id="loading">      
-      <center><font size="5" face="verdana" color="white">LOADING</font></center>   
-      <progress value="0" max="100" id="progress"></progress>
-      <center><font size="5" face="verdana" color="white">Please wait...</font></center>   
-      <div id="status">Downloading...</div>      
-    </div>
+          body {
+            background-color: black;
+          }
+          body > div {
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+          }
+          #loading {
+              flex-direction: column;
+          }
+          progress[value] {
+              appearance: none;
+              background-color: #eee;
+              border-radius: 0px;
+              box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
+              width: 50%;
+              height: 2px
+          }
+      </style>
+  </head>
+
+<body>
+ <div id="loading">  
+  <font size="5" face="verdana" color="white">LOADING</font><br>
+  <progress value="0" max="100" id="progress"></progress><br>    
+   <font size="4" face="verdana" color="white">please wait...</font>
+</div>
 
     <div>
       <canvas id="canvas" align="center" oncontextmenu="event.preventDefault()"></canvas>
